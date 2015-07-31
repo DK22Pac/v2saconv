@@ -17,10 +17,6 @@ Converting skinned models
 
 Converting normal map data (was removed from current release since a stable normal map plugin is still not available for GTA SA)
 
-![Img4](http://i.imgur.com/ruG9nbal.png)
-
-Converting normal map data (was removed from current release since a stable normal map plugin is still not available for GTA SA)
-
 ![Img5](http://i.imgur.com/ruG9nbal.png)
 
 Generating day lighting (prelight) for map models
@@ -39,7 +35,7 @@ Generating breakable models
 
 ![Img9](http://i.imgur.com/zd0YriLl.jpg)
 
-Generating .col files
+Generating .col files with auto material matching
 
 ![Img10](http://i.imgur.com/0e2Sax8l.png)
 
