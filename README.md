@@ -39,6 +39,8 @@ Generating .col files with auto material matching
 
 ![Img10](http://i.imgur.com/0e2Sax8l.png)
 
+[Download with binaries](http://www.mediafire.com/download/zsi2igp5271p913/ytdydryddyft2txddffcol_25052015.rar)
+
 Thanks to: All guys who researched RAGE formats, listener, OpenIV team, Dageron, aru, tgascoigne and others.
 
 Thanks to M4K3, ThirteenAG, Automan for support/help.
