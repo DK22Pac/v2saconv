@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f18a1bf0-7667-426c-a018-5612da40eb90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dffapi">
+      <UniqueIdentifier>{0b7c6c96-f73d-4f47-8a7a-aa8206fe9164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inih">
+      <UniqueIdentifier>{3bed950d-453f-4309-81ee-1dc06c6154d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ColFile.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ColMaterials.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hash.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Log.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MatFlags.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ModelConverter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NormalMap.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RageResource.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Search.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Settings.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureConverter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VehicleConverter.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\2dEffect.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\AnimationDictionary.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Anisot.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Atomic.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Breakable.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Clump.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\CollisionPlugin.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\EnvMap.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Extension.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\ExtraVertColour.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\FrameList.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Geometry.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\GeometryList.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\HAnim.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Material.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\MaterialList.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\MatFX.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Memory.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Mesh.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Native.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\NodeName.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\NormalMap.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Pipeline.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\RenderWare.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Rights.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\RwTypes.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Skin.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\SkyMipmap.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\SpecMap.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\StdInc.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Stream.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\String.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Texture.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\texture_helper.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\TextureNative.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\Txd.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="dffapi\UVAnim.h">
+      <Filter>dffapi</Filter>
+    </ClInclude>
+    <ClInclude Include="inih\ini.h">
+      <Filter>inih</Filter>
+    </ClInclude>
+    <ClInclude Include="inih\INIReader.h">
+      <Filter>inih</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\2dEffect.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\AnimationDictionary.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Anisot.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Atomic.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Breakable.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Clump.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\CollisionPlugin.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\EnvMap.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Extension.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\ExtraVertColour.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\FrameList.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Geometry.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\GeometryList.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\HAnim.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Material.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\MaterialList.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\MatFX.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Memory.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Mesh.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Native.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\NodeName.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\NormalMap.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Pipeline.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Rights.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Skin.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\SkyMipmap.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\SpecMap.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Std.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Stream.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\String.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Texture.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\texture_helper.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\TextureNative.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\Txd.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="dffapi\UVAnim.cpp">
+      <Filter>dffapi</Filter>
+    </ClCompile>
+    <ClCompile Include="inih\ini.c">
+      <Filter>inih</Filter>
+    </ClCompile>
+    <ClCompile Include="inih\INIReader.cpp">
+      <Filter>inih</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zlib\zdll.lib">
+      <Filter>Resource Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6B89457-A2EC-4B9C-B27A-9912AEED8F70}</ProjectGuid>
+    <RootNamespace>ytdydryddyft2txddffcol</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)../output/$(Platform)_$(Configuration)_2013_xp/</OutDir>
+    <IntDir>$(ProjectDir)../obj/$(ProjectName)/$(Platform)_$(Configuration)_2013_xp/</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>$(ProjectDir)../obj/$(ProjectName)/$(Platform)_$(Configuration)_2013_xp/</IntDir>
+    <OutDir>$(ProjectDir)../output/$(Platform)_$(Configuration)_2013_xp/</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level1</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="dffapi\2dEffect.h" />
+    <ClInclude Include="dffapi\AnimationDictionary.h" />
+    <ClInclude Include="dffapi\Anisot.h" />
+    <ClInclude Include="dffapi\Atomic.h" />
+    <ClInclude Include="dffapi\Breakable.h" />
+    <ClInclude Include="dffapi\Clump.h" />
+    <ClInclude Include="dffapi\CollisionPlugin.h" />
+    <ClInclude Include="dffapi\EnvMap.h" />
+    <ClInclude Include="dffapi\Extension.h" />
+    <ClInclude Include="dffapi\ExtraVertColour.h" />
+    <ClInclude Include="dffapi\FrameList.h" />
+    <ClInclude Include="dffapi\Geometry.h" />
+    <ClInclude Include="dffapi\GeometryList.h" />
+    <ClInclude Include="dffapi\HAnim.h" />
+    <ClInclude Include="dffapi\Material.h" />
+    <ClInclude Include="dffapi\MaterialList.h" />
+    <ClInclude Include="dffapi\MatFX.h" />
+    <ClInclude Include="dffapi\Memory.h" />
+    <ClInclude Include="dffapi\Mesh.h" />
+    <ClInclude Include="dffapi\Native.h" />
+    <ClInclude Include="dffapi\NodeName.h" />
+    <ClInclude Include="dffapi\NormalMap.h" />
+    <ClInclude Include="dffapi\Pipeline.h" />
+    <ClInclude Include="dffapi\RenderWare.h" />
+    <ClInclude Include="dffapi\Rights.h" />
+    <ClInclude Include="dffapi\RwTypes.h" />
+    <ClInclude Include="dffapi\Skin.h" />
+    <ClInclude Include="dffapi\SkyMipmap.h" />
+    <ClInclude Include="dffapi\SpecMap.h" />
+    <ClInclude Include="dffapi\StdInc.h" />
+    <ClInclude Include="dffapi\Stream.h" />
+    <ClInclude Include="dffapi\String.h" />
+    <ClInclude Include="dffapi\Texture.h" />
+    <ClInclude Include="dffapi\TextureNative.h" />
+    <ClInclude Include="dffapi\texture_helper.h" />
+    <ClInclude Include="dffapi\Txd.h" />
+    <ClInclude Include="dffapi\UVAnim.h" />
+    <ClInclude Include="inih\ini.h" />
+    <ClInclude Include="inih\INIReader.h" />
+    <ClInclude Include="src\ColFile.h" />
+    <ClInclude Include="src\ColMaterials.h" />
+    <ClInclude Include="src\Hash.h" />
+    <ClInclude Include="src\Log.h" />
+    <ClInclude Include="src\MatFlags.h" />
+    <ClInclude Include="src\Math.h" />
+    <ClInclude Include="src\ModelConverter.h" />
+    <ClInclude Include="src\NormalMap.h" />
+    <ClInclude Include="src\RageResource.h" />
+    <ClInclude Include="src\Search.h" />
+    <ClInclude Include="src\Settings.h" />
+    <ClInclude Include="src\TextureConverter.h" />
+    <ClInclude Include="src\VehicleConverter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dffapi\2dEffect.cpp" />
+    <ClCompile Include="dffapi\AnimationDictionary.cpp" />
+    <ClCompile Include="dffapi\Anisot.cpp" />
+    <ClCompile Include="dffapi\Atomic.cpp" />
+    <ClCompile Include="dffapi\Breakable.cpp" />
+    <ClCompile Include="dffapi\Clump.cpp" />
+    <ClCompile Include="dffapi\CollisionPlugin.cpp" />
+    <ClCompile Include="dffapi\EnvMap.cpp" />
+    <ClCompile Include="dffapi\Extension.cpp" />
+    <ClCompile Include="dffapi\ExtraVertColour.cpp" />
+    <ClCompile Include="dffapi\FrameList.cpp" />
+    <ClCompile Include="dffapi\Geometry.cpp" />
+    <ClCompile Include="dffapi\GeometryList.cpp" />
+    <ClCompile Include="dffapi\HAnim.cpp" />
+    <ClCompile Include="dffapi\Material.cpp" />
+    <ClCompile Include="dffapi\MaterialList.cpp" />
+    <ClCompile Include="dffapi\MatFX.cpp" />
+    <ClCompile Include="dffapi\Memory.cpp" />
+    <ClCompile Include="dffapi\Mesh.cpp" />
+    <ClCompile Include="dffapi\Native.cpp" />
+    <ClCompile Include="dffapi\NodeName.cpp" />
+    <ClCompile Include="dffapi\NormalMap.cpp" />
+    <ClCompile Include="dffapi\Pipeline.cpp" />
+    <ClCompile Include="dffapi\Rights.cpp" />
+    <ClCompile Include="dffapi\Skin.cpp" />
+    <ClCompile Include="dffapi\SkyMipmap.cpp" />
+    <ClCompile Include="dffapi\SpecMap.cpp" />
+    <ClCompile Include="dffapi\Std.cpp" />
+    <ClCompile Include="dffapi\Stream.cpp" />
+    <ClCompile Include="dffapi\String.cpp" />
+    <ClCompile Include="dffapi\Texture.cpp" />
+    <ClCompile Include="dffapi\TextureNative.cpp" />
+    <ClCompile Include="dffapi\texture_helper.cpp" />
+    <ClCompile Include="dffapi\Txd.cpp" />
+    <ClCompile Include="dffapi\UVAnim.cpp" />
+    <ClCompile Include="inih\ini.c" />
+    <ClCompile Include="inih\INIReader.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="zlib\zdll.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
