@@ -15,13 +15,19 @@ struct Ptr
 	unsigned int offset : 28;
 	unsigned int dataType : 4;
 	unsigned int _padding64;
+
+    bool isValid() {
+        if (dataType == RSC_CPU_DATA || dataType == RSC_GPU_DATA)
+            return true;
+        return false;
+    }
 };
 
 #define PTR(type, name) union{ type *name; Ptr ptr_##name; }
 #define PTR_ARR(type, name, size) union{ type *name[size]; Ptr ptr_##name[size]; }
-#define TRANSLATEPTR(name) if(!resData->IsPointerTranslated(ptr_##name)) \
+#define TRANSLATEPTR(name) if((!resData->IsPointerTranslated(ptr_##name))) \
                                name = (decltype(name))resData->TranslatePtr(ptr_##name)
-#define TRANSLATEPTR2(type, name) if(!resData->IsPointerTranslated(ptr_##name)) \
+#define TRANSLATEPTR2(type, name) if((!resData->IsPointerTranslated(ptr_##name))) \
 	                                  name = (type *)resData->TranslatePtr(ptr_##name)
 
 struct RscHeader
@@ -251,6 +257,19 @@ public:
 	}
 };
 
+class TextureDesc
+{
+public:
+    DWORD64 vtable;
+    DWORD unk1[8];
+    PTR(CHAR, m_pszName);
+
+    class TextureDesc(ResourceData *resData)
+    {
+        TRANSLATEPTR(m_pszName);
+    }
+};
+
 struct Bone
 {
     FLOAT unk1[12]; // 0.0, 1.0
@@ -316,7 +335,7 @@ struct ShaderParam
 	{
 		TRANSLATEPTR(m_pData);
 		if(m_pData && !m_nDataType)
-			new (m_pData) Texture(resData);
+			new (m_pData) TextureDesc(resData);
 	};
 };
 
@@ -355,8 +374,10 @@ struct ShaderGroup
 
 	ShaderGroup(ResourceData *resData) : m_shaders(resData)
 	{
+        //check_shadergroup_texnames(this);
 		TRANSLATEPTR(m_pTxd);
-		new (m_pTxd) Dictionary<Texture>(resData);
+        if(m_pTxd)
+            new (m_pTxd) Dictionary<Texture>(resData);
 	}
 };
 
@@ -584,6 +605,7 @@ struct Drawable
 	{
 		TRANSLATEPTR(m_pShaderGroup);
 		new (m_pShaderGroup) ShaderGroup(resData);
+        ///check_shadergroup_texnames(m_pShaderGroup);
 		TRANSLATEPTR(m_pSkeleton);
 		new (m_pSkeleton) Skeleton(resData);
 		for(BYTE i = 0; i < 4; i++)
@@ -591,8 +613,8 @@ struct Drawable
 			TRANSLATEPTR2(PtrCollection<Model>, m_pModelCollection[i]);
 			new (m_pModelCollection[i]) PtrCollection<Model>(resData);
 		}
-		TRANSLATEPTR(m_pMainModelCollection);
-		new (m_pMainModelCollection) PtrCollection<Model>(resData);
+		//TRANSLATEPTR(m_pMainModelCollection);
+		//new (m_pMainModelCollection) PtrCollection<Model>(resData);
 		TRANSLATEPTR(m_pszName);
 	}
 };
