@@ -1,6 +1,9 @@
 # v2saconv
 GTAV > GTASA resource converter. Converts YTD/YDR/YDD/YFT resources to DFF/TXD and generates COL files.
 
+Latest version: 06.01.2016
+[Download with binaries](https://drive.google.com/uc?export=download&id=0B3pQzS44FafdbFIxSHpJTUVicTA)
+
 Features:
 
 Converting vehicles with separated components, body colors and lights
@@ -38,8 +41,6 @@ Generating breakable models
 Generating .col files with auto material matching
 
 ![Img10](http://i.imgur.com/0e2Sax8l.png)
-
-[Download with binaries](http://www.mediafire.com/download/zsi2igp5271p913/ytdydryddyft2txddffcol_25052015.rar)
 
 Thanks to: All guys who researched RAGE formats, listener, OpenIV team, Dageron, aru, tgascoigne and others.
 
